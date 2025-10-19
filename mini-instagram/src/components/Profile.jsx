@@ -1,13 +1,13 @@
 import React from "react";
 import FollowButton from "./FollowButton";
 import Post from "./Post";
+import profileImage from "../assets/1742611985634.jpeg";
 
 // JavaScript object and array
 const user = {
   name: "Dylan Zhao",
   bio: "AI Researcher | Coding",
-  profilePic:
-    "https://cdn-icons-png.flaticon.com/512/847/847969.png",
+  profilePic: profileImage,
   posts: [
     { id: 1, image: "https://picsum.photos/300?1", likes: 42 },
     { id: 2, image: "https://picsum.photos/300?2", likes: 18 },
