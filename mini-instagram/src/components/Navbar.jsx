@@ -5,6 +5,7 @@ function Navbar() {
   return (
     <aside className="sidebar">
       <div className="brand"> </div>
+      <h1>Mini Instagram</h1>
       <ul className="nav-list">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/profile">Profile</Link></li>
