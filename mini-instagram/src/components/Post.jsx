@@ -10,8 +10,8 @@ function Post({ image, likes }) {
   return (
     <div className="post">
       <img src={image} width="100%" alt="Post" />
-      <p>❤️ {likeCount} likes</p>
-      <button onClick={handleLike}>Like</button>
+      <p className="likes">❤️ {likeCount} likes</p>
+      <button className="like-button" onClick={handleLike}>Like</button>
     </div>
   );
 }

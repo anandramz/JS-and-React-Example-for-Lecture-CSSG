@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fafafa;
+  background-color: #000;
+  color: #efefef;
   margin: 0;
   padding: 0;
   display: flex;
@@ -8,17 +9,89 @@ body {
 }
 
 .profile {
-  width: 400px;
-  margin-top: 50px;
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 935px;
+  margin-top: 40px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0 30px;
+  border-bottom: 1px solid #262626;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-meta .username {
+  font-weight: 600;
+  font-size: 28px;
+  margin: 0 0 6px 0;
+}
+
+.profile-meta .description {
+  color: #a8a8a8;
+  margin: 0 0 12px 0;
+}
+
+.actions button {
+  margin-right: 8px;
 }
 
 .post {
-  margin-top: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  background: #000;
+  border: 1px solid #262626;
   overflow: hidden;
 }
+
+.likes {
+  margin: 8px 0 0 0;
+  padding: 10px 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #efefef;
+}
+
+.like-button {
+  margin: 10px 12px 12px;
+  background: #262626;
+  color: #efefef;
+  border: 1px solid #363636;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.05s ease;
+}
+
+.like-button:hover { background: #333; }
+.like-button:active { transform: scale(0.98); }
+
+.posts-heading {
+  color: #efefef;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin: 20px 0 20px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.post-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.post-footer { display: none; }
