@@ -1,7 +1,7 @@
 import React from "react";
 import FollowButton from "./FollowButton";
 import Post from "./Post";
-import profileImage from "../assets/1742611985634.jpeg";
+import profileImage from "../assets/profileImage.jpeg";
 
 // JavaScript object and array
 const user = {

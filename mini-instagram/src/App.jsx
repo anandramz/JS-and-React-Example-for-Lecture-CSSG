@@ -4,7 +4,7 @@ import Profile from "./components/Profile";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 
-
+// Define our Routes in our App component
 function App() {
   return (
     <div className="app-layout">
